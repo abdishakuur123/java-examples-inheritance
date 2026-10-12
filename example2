@@ -1,0 +1,17 @@
+class Person {
+    Person() {
+        System.out.println("I am a person");
+    }
+}
+
+class Student extends Person {
+    Student() {
+        System.out.println("I am a student");
+    }
+}
+
+public class example2 {
+    public static void main(String[] args) {
+        Student s = new Student();
+    }
+}
