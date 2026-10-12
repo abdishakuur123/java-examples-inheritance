@@ -1,0 +1,15 @@
+public class Main {
+
+    static void display(int age) {
+        System.out.println("Age: " + age);
+    }
+
+    static void display(String name) {
+        System.out.println("Name: " + name);
+    }
+
+    public static void main(String[] args) {
+        display(20);
+        display("Abdi");
+    }
+}
