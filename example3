@@ -1,0 +1,25 @@
+class BankAccount {
+    double balance = 0;
+
+    void deposit(double amount) {
+        balance += amount;
+        System.out.println("Deposited: " + amount);
+    }
+}
+
+class SavingsAccount extends BankAccount {
+    @Override
+    void deposit(double amount) {
+        super.deposit(amount);
+        balance += 5;
+        System.out.println("Bonus added: 5");
+    }
+}
+
+public class example3 {
+    public static void main(String[] args) {
+        SavingsAccount s = new SavingsAccount();
+        s.deposit(100);
+        System.out.println("Balance: " + s.balance);
+    }
+}
